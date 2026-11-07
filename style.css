@@ -1,0 +1,212 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
+
+/* UMUMIY */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff8ef;
+    color: #16181d;
+    font-family: 'Nunito', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HEADER */
+.header {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px 30px;
+    background-color: #1d4ed8;
+    color: white;
+    border-radius: 16px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.menu a {
+    color: white;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #fed7aa;
+}
+
+.menu button {
+    background-color: #c2410c;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu button:hover {
+    background-color: #9a3412;
+}
+
+/* HERO */
+.hero {
+    max-width: 1000px;
+    margin: 70px auto;
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.kichik-yozuv {
+    color: #c2410c;
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    color: #6b7280;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.hero button {
+    background-color: #c2410c;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 8px;
+    border-radius: 30px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background-color: #9a3412;
+    transform: translateY(-3px);
+}
+
+/* KARTALAR */
+.kartalar {
+    max-width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    gap: 24px;
+    padding: 15px;
+}
+
+.karta {
+    flex: 1;
+    background-color: white;
+    padding: 30px 20px;
+    border: 2px solid #fdba74;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.karta:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(194, 65, 12, 0.2);
+}
+
+.karta h2 {
+    color: #1d4ed8;
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.karta p {
+    color: #6b7280;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* FOOTER */
+.footer {
+    max-width: 1000px;
+    margin: 60px auto 20px;
+    padding: 30px;
+    background-color: #1d4ed8;
+    color: white;
+    text-align: center;
+    border-radius: 16px;
+}
+
+.footer h2 {
+    font-size: 26px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    color: #dbeafe;
+    font-size: 14px;
+}
+
+/* TELEFON UCHUN */
+@media (max-width: 700px) {
+    .header {
+        margin: 10px;
+        padding: 18px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        margin: 30px auto;
+        padding: 30px 20px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .kartalar {
+        flex-direction: column;
+        margin: 20px auto;
+    }
+
+    .footer {
+        margin: 30px 10px 10px;
+    }
+}
